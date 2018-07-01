@@ -684,3 +684,23 @@
     }
   }
 }
+
+.author-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #bbb;
+  margin: 1rem auto;
+
+  &-pen {
+    margin-right: 0.5rem;
+  }
+  &-link {
+    color: #bbb;
+    margin-left: 0.5rem;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
