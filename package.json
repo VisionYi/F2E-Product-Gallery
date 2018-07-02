@@ -5,7 +5,7 @@
   "scripts": {
     "clean": "rm -rf dist && rm -rf .cache",
     "start": "npm run clean && parcel index.html",
-    "build": "npm run clean && parcel build index.html --public-url /F2E-product-gallery/",
+    "build": "npm run clean && parcel build index.html --public-url ./",
     "gh": "gh-pages",
     "deploy": "gh-pages -d dist -m \"Auto-generated update\""
   },

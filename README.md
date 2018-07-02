@@ -6,3 +6,6 @@
 ## 筆記
 ### Parcel
 - 當多個 HTML 頁面時，需要在各自的 HTML 裡直接引入 css/scss/less, js/jsx 檔案
+
+### CSS grid
+- [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/#prop-grid-area)

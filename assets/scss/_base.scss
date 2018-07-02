@@ -59,14 +59,14 @@
   line-height: $line-height-l;
   font-style: italic;
   font-weight: 700;
-  z-index: 5;
+  z-index: 2;
 }
 
 .serial {
   font-size: $font-size-xl;
   line-height: $font-size-xl;
   font-weight: 900;
-  z-index: 5;
+  z-index: 2;
 }
 
 .figure {
@@ -77,22 +77,21 @@
   overflow: hidden;
   width: 100%;
   height: auto;
-  z-index: 3;
 
   img {
     width: inherit;
     height: inherit;
-    transform: scale(1);
-    transition: all 0.8s;
-
-    &:hover {
-      transform: scale(1.1);
-    }
   }
 
-  &--height-full {
-    width: auto;
-    height: 100%;
+  &--click {
+    img {
+      transform: scale(1);
+      transition: all 0.8s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
   }
 }
 
@@ -102,7 +101,7 @@
   min-width: $grid-col;
   min-height: $grid-row;
   border: 20px solid $color-primary;
-  z-index: 1;
+  z-index: -2;
 }
 
 .board {
@@ -111,10 +110,10 @@
   min-width: $grid-col;
   min-height: $grid-row;
   background-color: $color-primary;
-  z-index: 2;
+  z-index: -1;
 
   &--linear {
-    z-index: 4;
+    z-index: 1;
     background:
       repeating-linear-gradient(
         135deg,
@@ -533,9 +532,6 @@
 }
 
 .product {
-  img:hover {
-    transform: initial;
-  }
 
   &__return.container {
     grid-template-rows: repeat(1, $grid-row);
