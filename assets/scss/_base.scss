@@ -682,18 +682,16 @@
 }
 
 .author-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   color: #bbb;
   margin: 1rem auto;
 
   &-pen {
-    margin-right: 0.5rem;
+    margin-right: 0.25rem;
   }
   &-link {
     color: #bbb;
-    margin-left: 0.5rem;
+    margin-left: 0.25rem;
 
     &:hover {
       color: $color-primary;
